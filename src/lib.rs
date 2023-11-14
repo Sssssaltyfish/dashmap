@@ -1,5 +1,5 @@
 #![cfg_attr(all(feature = "no_std", not(test)), no_std)] // Note: Concurrency tests require std for threading/channels
-#![allow(clippy::type_complexity)]
+#![allow(clippy::type_complexity, deprecated)]
 
 pub mod iter;
 pub mod iter_set;

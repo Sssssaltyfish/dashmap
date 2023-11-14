@@ -16,13 +16,18 @@ categories = ["concurrency", "algorithms", "data-structures"]
 default = []
 raw-api = []
 no_std = ["hashbrown"]
+axstd = ["num_cpus/axstd"]
 
 [dependencies]
-num_cpus = "1.13.0"
-ahash = "0.3.8"
-serde = { version = "1.0.114", optional = true, features = ["derive"] }
+num_cpus = { version = "1.13.0", default-features = false, features = [
+    "axstd",
+] }
+ahash = { version = "0.7.7", default-features = false }
+serde = { version = "1.0.188", optional = true, default-features = false, eatures = [
+    "derive",
+] }
 cfg-if = "0.1.10"
-hashbrown = { version = "0.8.0", optional = true }
+hashbrown = { version = "0.14.0", optional = true }
 
 [package.metadata.docs.rs]
 features = ["raw-api", "serde"]

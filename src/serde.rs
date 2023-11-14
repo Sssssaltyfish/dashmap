@@ -2,7 +2,7 @@ use crate::DashMap;
 use core::fmt;
 use core::hash::Hash;
 use serde::de::{Deserialize, MapAccess, Visitor};
-use serde::export::PhantomData;
+use core::marker::PhantomData;
 use serde::ser::{Serialize, SerializeMap, Serializer};
 use serde::Deserializer;
 
