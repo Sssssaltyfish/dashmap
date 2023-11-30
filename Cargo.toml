@@ -23,7 +23,7 @@ num_cpus = { version = "1.13.0", default-features = false, features = [
     "axstd",
 ] }
 ahash = { version = "0.7.7", default-features = false }
-serde = { version = "1.0.188", optional = true, default-features = false, eatures = [
+serde = { version = "1.0.188", optional = true, default-features = false, features = [
     "derive",
 ] }
 cfg-if = "0.1.10"
